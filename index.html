@@ -5,27 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="try.js"></script>
     <link rel="stylesheet" href="/styles.css">
     <title>Cash Register Manager</title>
+    <script src="https://kit.fontawesome.com/ccbe6a25e7.js" crossorigin="anonymous"></script>
+
 
 </head>
 
 <body>
 
-    <div class="container">
+    <div id="container">
         <h1 class="header">Cash Register Manager</h1>
         <p class="description">Enter the bill amount and cash given amount to get the returned amount</p>
         <label for="bill-amount">Bill amount:</label>
         <input id="bill-amount" type="number" />
 
-        <label for="cash-given">Cash given :</label>
+        <button id="next-btn">next</button>
+        <label id="label-cash-given" for="cash-given">Cash given :</label>
         <input id="cash-given" type="number" />
-        <button id="check-button">check</button>
+        <button id="check-btn">check</button>
         <p id="error-message"></p>
-        <p id="amount-return"></p>
-        <table>
-            <caption>Return Change:</caption>
+        <table id="table-">
+            <caption>Return Change:
+
+                <p id="amount-return"></p>
+            </caption>
             <tr>
                 <th>No. of notes</th>
                 <td class="noOfNotes"></td>
@@ -48,9 +52,65 @@
             </tr>
         </table>
 
+        <button id="edit">edit</button>
+        <button id="reset-btn">reset</button>
+
 
     </div>
 
+    <footer class="footer">
+        <div class="footer-header" c style="color: white;"><span style="color: black;">DEV :</span> Murtaza Neher Wala</div>
+        <div class="footer-header" style="color: black;margin-top: 0.5rem;margin-bottom: 0.5rem;">Connect with me socially</div>
+
+        <span>
+
+            <button class="btn-S" onclick="window.location.href='https://www.instagram.com/murtaza_neher_wala/?utm_medium=copy_link'">
+              <i class="fab fa-instagram"></i> <a class = "nameSocial"> Instagram </a> </span>
+        </button>
+
+        </span>
+
+        <span>
+
+
+            <button class="btn-S" onclick="window.location.href='https://twitter.com/Murtaza_neher?t=KjQ1giMXozsd4enZDMxNYg&s=03'">
+
+              <i  class="fab fa-twitter"></i> <a class = "nameSocial"> Twitter </a> 
+             
+          </button>
+
+        </span>
+
+
+
+        <span>
+
+            <button class="btn-S" onclick="window.location.href='https://github.com/MurtazaNeher'">
+
+              <i class="fab fa-github"></i> <a class = "nameSocial"> Github </a> 
+             
+          </button>
+
+
+        </span>
+
+
+
+        <span>
+
+    <button class="btn-S" onclick="window.location.href='https://murtazaneherwala.netlify.app/'">
+
+        <i class="fas fa-server"></i><a class = "nameSocial"> Portfolio </a> 
+
+
+      
+  </button>
+</span>
+
+    </footer>
+
+
+    <script src="app.js"></script>
 
 </body>
 
