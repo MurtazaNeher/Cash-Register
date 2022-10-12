@@ -27,7 +27,7 @@ const table = document.querySelector("#table-");
 
 
 
-const availableNotes = [2000, 500, 100, 50, 20, 10, 1];
+const availableNotes = [2000, 500, 100, 50, 20, 10,5, 1];
 
 // const editedAvailableNotes = [n1.value, n2.value, n3.value, n4.value, n5.value, n6.value];
 
